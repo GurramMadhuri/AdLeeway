@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration page</title>
+	<script type="text/javascript" src="js/jsfile.js"> </script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+</head>
+<style type="text/css">
+
+
+@media screen and (max-width: 500px) {
+        	.select,#registerlabel{
+        		width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		
+        		}
+        	}
+
+        
+        @media only screen and (min-width: 481px) and (max-width: 767px){
+        	.select,#registerlabel{
+        		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		
+        	}
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px){
+        	.select,#registerlabel{
+        		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		
+        	}
+        }
+
+        @media only screen and (min-width:0px) and (max-width:480px){
+       .select,#registerlabel{
+        		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		overflow-wrap: break-word;
+        	}
+        }	
+
+
+
+
+	.select{
+		padding: 8px 12px;
+		color: #333333;
+		background-color:pink;
+		border:1px solid #dddddd;
+		cursor: pointer;
+		border-radius: 5px; 
+	}
+
+	.select:hover,
+	.select:focus{
+		outline: none;
+		border:1px solid #bbbbbb;
+	}
+
+	.select option{
+		background-color: #ffffff;
+	}
+	 @keyframes mymove {
+        	50% {
+        		box-shadow: 10px 20px 30px grey;
+        		}
+        	}
+	.container {
+			width: 50%;
+        	animation: mymove 5s infinite;
+            flex-wrap: wrap;
+            border-color: bisque;
+        	box-shadow: 1px 1px;
+        	border-style: solid;
+        	margin-bottom: 10px;
+        	margin-top: 10px;
+        	padding-bottom: 20px;
+        }
+	
+</style>
+<body>
+	<div class="topnav" id="myTopnav">
+  <a href="indexpage.html" ><b>Home</b></a>
+  <a href="loginpage.html" class="active"><b>Login</b></a>
+  <a href="contactpage.html"><b>Contact</b></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+<div class="container">
+	<br>
+	<h1 id="registerlabel" style="color: seagreen; font-size: 35px;" align="center"><b>REGISTER NOW!</b></h1>
+	<label>FIRSTNAME</label>
+	<input type="text" class="form-control" name="username" placeholder="Enter firstname" required>
+	<br>
+	<label>SURNAME</label>
+	<input type="text" class="form-control" name="surname" placeholder="Enter Surname" required>
+	<br>
+	<label>EMAIL ID</label>
+	<input type="email" class="form-control" name="email" placeholder="Enter Email" required>
+	<br>
+	<label>PASSWORD</label>
+	<input type="password" class="form-control" name="password" placeholder="Enter Password" required>
+	<br>
+    <label>Choose College</label>
+    <select style="flex-wrap: wrap;" class="select">
+    	<option disabled selected>Select College</option>
+    	<option value="Jntuk">JNTUK</option>
+    	<option value="Jntuv">JNTUV</option>
+		<option value="Jntun">JNTUN</option>
+		<option value="Jntuh">JNTUH</option>
+		<option value="Acharya Nagarjuna Univeristy">ACHARYA NAGARHUNA UNIVERISTY</option>
+   </select>
+   <br>
+   <br>
+    <label>Choose Year</label>
+
+   <select class="select">
+    	<option disabled selected>Select Year</option>
+    	<option value="1">1st Year</option>
+    	<option value="2">2nd Year</option>
+		<option value="3">3rd Year</option>
+		<option value="4">4th Year</option>
+   </select>
+<br>
+<br>
+
+ <label>Choose Branch</label>
+
+   <select class="select">
+    	<option disabled selected>Select Branch</option>
+    	<option value="cse">CSE</option>
+    	<option value="mec">MEC</option>
+		<option value="ece">ECE</option>
+		<option value="eee">EEE</option>
+		<option value="it">IT</option>
+</select>
+<br>
+<br>
+<button onclick="registerbtn()" style="color: white;font-size: 20px;" class="btn btn-success" >REGISTER</button>
+<div id="snackbar">SUCCESSFULLY REGISTERED!! NOW U CAN LOGIN</div>
+<br>
+<br>
+<button class="btn btn-success"><a style="color: white;font-size: 20px;" href="loginpage.html">LOGIN</a></button>
+</div>
+</div>
+</div>
+
+<br>
+<br>
+
+
+<div style="width: 100%;height: 100px;background-color: bisque;">
+	<center><h3 style="color: black;padding-top: 10px;">Follow AdLeeway</h3></center>
+   <center>  <a style="padding: 10px;" href="https://www.facebook.com"><i id="facebook-icon" class="fa fa-facebook-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.twitter.com"><i id="twitter-icon" class="fa
+			fa-twitter-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.linkedin.com"><i id="linkedin-icon" class="fa fa-linkedin-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.pinterest.com"><i id="pinterest-icon" class="fa fa-pinterest-square fa-2x"></i></a></center>
+</div>
+<div style="width: 100%;height: 50px;background-color: grey;">
+	<center><h3 style="color: white;padding-top: 10px;">Copyrights @2020 AdLeeway</h3></center>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<script type="text/javascript" src="./js/jsfile.js"> </script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+</head>
+<body>
+	
+	<style type="text/css">
+		
+
+@media screen and (max-width: 500px) {
+        	#bgimage{
+        		width: 50%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		
+        		}
+        	}
+
+        
+        @media only screen and (min-width: 481px) and (max-width: 767px){
+        	#bgimage{
+        		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		
+        	}
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1024px){
+        	#bgimage{
+        		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		
+        	}
+        }
+
+        @media only screen and (min-width:0px) and (max-width:480px){
+        #bgimage{
+        		width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+        		justify-content: space-around;
+        		display: flex;
+        		overflow-wrap: break-word;
+        	}
+        }
+
+        @keyframes mymove {
+        	50% {
+        		box-shadow: 10px 20px 30px grey;
+        		}
+        	}
+	.bgimage {
+        	animation: mymove 5s infinite;
+            flex-wrap: wrap;
+            border-color: bisque;
+        	box-shadow: 1px 1px;
+        	border-style: solid;
+
+        	
+        }	
+</style>
+<div class="topnav" id="myTopnav">
+  <a href="indexpage.html" ><b>Home</b></a>
+  <a href="loginpage.html" class="active"><b>Login</b></a>
+  <a href="contactpage.html"><b>Contact</b></a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<br>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			<img class="bgimage img-responsive" src="./images/bgimage.jpg" style="float:right;">
+			<div class="col-md-12 col-lg-6 col-sm-12 col-xs-12" style="float:left;">
+				<h2 class="text-left">Login</h2>
+			<p class="text-left">Don't have an account?<a href="registrationpage.html">Create Account</a> </p>
+			<br>
+		    <input type="text" class="form-control" name="username" placeholder="Enter Username" required>
+			<br>
+			<input type="password" class="form-control" name="password" placeholder="Enter Password" required>
+			<br>
+			<input type="checkbox"><small>Remember me</small>
+			<br>
+			<p ><a style="color: red;float: left;" href="forgetpasswordpage.html">Forget Password</a></p>
+			<br>
+			<a href="#"><div class="btn btn-info" onclick="loginbtn()">Login</div></a>
+			<div id="snackbar">SUCCESSFULLY  LOGIN</div>
+
+			<br>
+			<a style="padding: 10px;" href="https://www.facebook.com"><i id="facebook-icon" class="fa fa-facebook-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.twitter.com"><i id="twitter-icon" class="fa
+			fa-twitter-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.linkedin.com"><i id="linkedin-icon" class="fa fa-linkedin-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.pinterest.com"><i id="pinterest-icon" class="fa fa-pinterest-square fa-2x"></i></a>
+	        </div>
+        </div>
+    </div>
+</div>
+</section>
+<br>
+<br>
+
+
+<div style="width: 100%;height: 100px;background-color: bisque;">
+	<center><h3 style="color: black;padding-top: 10px;">Follow AdLeeway</h3></center>
+   <center>  <a style="padding: 10px;" href="https://www.facebook.com"><i id="facebook-icon" class="fa fa-facebook-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.twitter.com"><i id="twitter-icon" class="fa
+			fa-twitter-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.linkedin.com"><i id="linkedin-icon" class="fa fa-linkedin-square fa-2x"></i></a>
+			<a style="padding: 10px;" href="https://www.pinterest.com"><i id="pinterest-icon" class="fa fa-pinterest-square fa-2x"></i></a></center>
+</div>
+<div style="width: 100%;height: 61px;background-color: grey;">
+	<center><h3 style="color: white;padding-top: 10px;">Copyrights @2020 AdLeeway</h3></center>
+
+</div>
+
+	
+</body>
+</html>
